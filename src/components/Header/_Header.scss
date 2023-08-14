@@ -1,0 +1,29 @@
+.header {
+    display: flex;
+    margin: 45px 100px 50px 100px;
+    align-items: center;
+    justify-content: space-between;
+}
+.header > ul {
+    list-style: none;
+    display: flex;
+        & li {
+            margin-left: 50px;
+            font-size: 17px;
+            font-family: 'Montserrat', sans-serif;
+            & a {
+                color: $second-text-color; // Couleur de texte souhaitée
+                text-decoration: none; // Enlève le souligné
+                cursor: pointer;
+            }
+            & a:hover {
+                text-decoration: underline;
+                cursor: pointer;
+            }
+        }
+}
+.logo--header {
+    width: 200px;
+    height: 70px;
+    object-fit: contain;
+}
