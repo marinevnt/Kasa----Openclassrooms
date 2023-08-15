@@ -9,7 +9,6 @@ import jsonData from '../../data/db.json';
 import { Link } from 'react-router-dom';
 
 
-
 function Home() {
   return (
     <div className="home">

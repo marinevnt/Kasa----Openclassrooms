@@ -9,6 +9,7 @@ import dbJson from '../../data/db.json';
 function AccomodationPage(props) {
     const selectedAccomodation = dbJson.find (item => item.id === props.id);
 
+
     return (
         <div >
             <Header li1= {<Link to="/">Accueil</Link>} li2= {<Link to="/about">A propos</Link>} img={logoHeader} />
