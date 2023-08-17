@@ -313,5 +313,48 @@ body {
     margin-right: 20px;
   }
 }
+.carrousel {
+  height: 415px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+.carrousel-content {
+  height: 415px;
+  width: 1150px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.carrousel-image {
+  height: 415px;
+  width: 1150px;
+  display: inline-block;
+  margin: 0;
+  object-fit: cover;
+  border-radius: 25px;
+}
+.carrousel img {
+  position: absolute;
+  bottom: 20px;
+}
+
+.arrow-left {
+  top: 160px;
+  left: 100px;
+}
+
+.arrow-right {
+  top: 160px;
+  right: 100px;
+}
+
+.image-index {
+  position: absolute;
+  bottom: 25px;
+  color: #fff;
+  font-family: "Montserrat", sans-serif;
+  font-size: 18px;
+}
 
 /*# sourceMappingURL=index.css.map */

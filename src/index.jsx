@@ -9,15 +9,17 @@ import AccomodationPage from './components/AccomodationPage/accomodationPage';
 
 const rootElement = document.getElementById('root');
 const root = ReactDOM.createRoot(rootElement);
-
+      
 root.render(
   <React.StrictMode>
     <Router>
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
+        <Route path="/accomodationpage">
+          <Route path=":accomodationId"  element={<AccomodationPage />} />
+        </Route>
         <Route path="*" element={<Error />} />
-        <Route path="/accomodationpage" element={<AccomodationPage />} />
       </Routes>
     </Router>
   </React.StrictMode>
