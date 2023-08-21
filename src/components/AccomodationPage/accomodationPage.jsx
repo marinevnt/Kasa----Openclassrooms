@@ -4,6 +4,7 @@ import Footer from '../Footer/Footer';
 import logoFooter from '../../Resources/logo-footer.png';
 import { Link} from 'react-router-dom';
 import SlideShow from '../SlideShow/SlideShow';
+import AccomodationInfos from '../AccomodationInfos/accomodationInfos';
 
 function AccomodationPage() {
     return (
@@ -11,6 +12,7 @@ function AccomodationPage() {
             <Header li1= {<Link to="/">Accueil</Link>} li2= {<Link to="/about">A propos</Link>} img={logoHeader} />
             
             <SlideShow />
+            <AccomodationInfos />
 
             <Footer text = "© 2020 Kasa. All rights reserved" img={logoFooter}/>
         </div>

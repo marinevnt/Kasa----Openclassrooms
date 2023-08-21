@@ -49,7 +49,6 @@ function SlideShow () {
                  style={{visibility: imageElements.length === 1 ? "hidden" : "none"}}/>
             <p className='image-index'>{currentImageIndex + 1}/{imageElements.length}</p>
         </div>
-
 )}
     
   export default SlideShow;

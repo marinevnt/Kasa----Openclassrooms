@@ -1,0 +1,77 @@
+.accomodation-infos {
+    display: flex;
+    justify-content: space-between;
+    margin: 5px 100px 25px 100px;
+    font-family: 'Montserrat', sans-serif;
+}
+.title-accomodation {
+    font-size: 36px;
+    color: $second-text-color;
+    font-weight:500;
+    margin: 0;
+}
+.accomodation-resume {
+    & p { 
+    font-size: 18px;
+    color: $second-text-color;
+    }
+    & ul {
+        list-style: none;
+        padding: 0;
+        display: flex;
+            & li {
+                margin-right: 10px;
+                background-color: $second-text-color;
+                border-radius: 25px;
+                padding: 3px 5px;
+                color: $main-text-color;
+                font-size: 14px;
+                min-width: 115px;
+                text-align: center;
+            }
+    }
+}
+.host {
+    display: flex;
+        & img {
+            border-radius: 75px;
+            width: 64px;
+            height: 64px;
+        }
+        & p {
+            color: $second-text-color;
+            font-size: 18px;
+            margin: 5px 10px 0 0;
+            width: 100px;
+            text-align: end;
+        }
+}
+.accomodation-specificities {
+    display: grid;
+    position: relative;
+    margin-left: 100px;
+    margin-right: 100px;
+    margin-bottom: 50px;
+    justify-content: space-between;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+.dropdown {
+    &-accomodation {
+        margin-left: 0;
+        margin-right: 0;
+    }
+}
+.star-rating {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 21px;
+}
+.full-star {
+    color: $second-text-color;
+    padding-left: 5px;
+}
+.empty-star {
+    color: #E3E3E3;
+    padding-left: 5px;
+}
