@@ -28,6 +28,8 @@
                 font-size: 14px;
                 min-width: 115px;
                 text-align: center;
+                height: 25px;
+                line-height: 25px;
             }
     }
 }
@@ -44,6 +46,7 @@
             margin: 5px 10px 0 0;
             width: 100px;
             text-align: end;
+            white-space: pre-line;
         }
 }
 .accomodation-specificities {
@@ -60,6 +63,11 @@
     &-accomodation {
         margin-left: 0;
         margin-right: 0;
+        border-radius: 10px;
+        & h2 {
+            font-size: 18px;
+            line-height: 30px;
+        }
     }
 }
 .star-rating {
@@ -74,4 +82,76 @@
 .empty-star {
     color: #E3E3E3;
     padding-left: 5px;
+}
+
+@media (max-width: 900px) {
+    .accomodation-resume {
+        & h1 {
+            font-size: 24px;
+        }
+        & p {
+            font-size: 18px;
+        }
+        & ul li {
+            font-size: 12px;
+        }
+    }
+    .accomodation-specificities {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 700px) {
+    .accomodation-infos {
+        flex-direction: column ;
+        margin: 5px 20px 25px 20px;
+    }
+    .accomodation-resume {
+        & h1 {
+            font-size: 18px;
+        }
+        & p {
+            font-size: 14px;
+        }
+        & ul li {
+            font-size: 10px;
+            min-width: 85px;
+            border-radius: 10px;
+            height: 20px;
+            line-height: 20px;
+        }
+    }
+    .accomodation-host {
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-between;
+    }
+    .accomodation-specificities {
+        display: flex;
+        flex-direction: column;
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+    .dropdown {
+        & ul {
+            font-size: 13px;
+        }
+        &-accomodation {
+            margin-left: 0;
+            margin-right: 0;
+            border-radius: 5px;
+            & h2 {
+                font-size: 13px;
+                line-height: 20px;
+                height: 20px;
+            }
+            & img {
+                width: 16px;
+            }
+        }
+    }
+    .custom-dropdown-header {
+        height: 30px;
+    }
 }

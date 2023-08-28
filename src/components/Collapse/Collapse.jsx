@@ -7,6 +7,7 @@ function Collapse(props) {
     const refHeader = useRef();
     const refContent = useRef();
 
+
     const dropContent = () => {
         showContent(!isContentVisible);
         arrowRotated(!isRotated);
@@ -30,15 +31,19 @@ function Collapse(props) {
 
     return (
       <div className={`dropdown ${props.className}`} style={{ height: drodpownSize }}>
-        <div ref={refHeader} className="dropdown-header">
+        <div ref={refHeader} className="dropdown-header custom-dropdown-header">
           <h2>{props.text}</h2>
           <img onClick={dropContent} src={props.img} className={`arrow ${isRotated ? 'rotate' : ''}`} alt="arrow" />
         </div>
         <ul ref={refContent} className='dropdown-content'>
-            {props.content.map((item) => {return <li key={item}>{item}</li>})}
-        </ul>
+          {props.content.map((item) => {return <li key={item}>{item}</li>})}
+        </ul> 
       </div>
     );
   }
 
   export default Collapse;
+
+
+ 
+ 

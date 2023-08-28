@@ -318,9 +318,19 @@ body {
   }
 }
 @media (max-width: 700px) {
-  .dropdown {
+  .dropdown-about {
     margin-left: 20px;
     margin-right: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+  .dropdown-about h2 {
+    font-size: 13px;
+    line-height: 20px;
+    height: 20px;
+  }
+  .dropdown-about img {
+    width: 16px;
   }
 }
 .carrousel {
@@ -328,35 +338,38 @@ body {
   position: relative;
   display: flex;
   justify-content: center;
+  margin-bottom: 30px;
+  margin-left: 100px;
+  margin-right: 100px;
 }
 .carrousel-content {
   height: 415px;
-  width: 1150px;
   display: flex;
   align-items: center;
   justify-content: center;
+  width: 100%;
 }
+
 .carrousel-image {
   height: 415px;
   width: 1150px;
-  display: inline-block;
   margin: 0;
   object-fit: cover;
   border-radius: 25px;
-}
-.carrousel img {
-  position: absolute;
-  bottom: 20px;
+  position: relative;
+  overflow: hidden;
 }
 
 .arrow-left {
   top: 160px;
-  left: 100px;
+  left: 30px;
+  position: absolute;
 }
 
 .arrow-right {
   top: 160px;
-  right: 100px;
+  right: 30px;
+  position: absolute;
 }
 
 .image-index {
@@ -367,6 +380,45 @@ body {
   font-size: 18px;
 }
 
+@media (max-width: 900px) {
+  .arrow-left {
+    width: 85px;
+    height: 95px;
+  }
+  .arrow-right {
+    width: 85px;
+    height: 95px;
+  }
+}
+@media (max-width: 700px) {
+  .carrousel {
+    height: 255px;
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+  .carrousel-content {
+    height: 255px;
+  }
+  .carrousel-image {
+    height: 255px;
+    border-radius: 10px;
+  }
+  .arrow-left {
+    width: 25px;
+    height: 30px;
+    top: 125px;
+    left: 20px;
+  }
+  .arrow-right {
+    width: 25px;
+    height: 30px;
+    top: 125px;
+    right: 20px;
+  }
+  .image-index {
+    visibility: hidden;
+  }
+}
 .accomodation-infos {
   display: flex;
   justify-content: space-between;
@@ -399,6 +451,8 @@ body {
   font-size: 14px;
   min-width: 115px;
   text-align: center;
+  height: 25px;
+  line-height: 25px;
 }
 
 .host {
@@ -415,6 +469,7 @@ body {
   margin: 5px 10px 0 0;
   width: 100px;
   text-align: end;
+  white-space: pre-line;
 }
 
 .accomodation-specificities {
@@ -431,6 +486,11 @@ body {
 .dropdown-accomodation {
   margin-left: 0;
   margin-right: 0;
+  border-radius: 10px;
+}
+.dropdown-accomodation h2 {
+  font-size: 18px;
+  line-height: 30px;
 }
 
 .star-rating {
@@ -447,6 +507,71 @@ body {
 .empty-star {
   color: #E3E3E3;
   padding-left: 5px;
+}
+
+@media (max-width: 900px) {
+  .accomodation-resume h1 {
+    font-size: 24px;
+  }
+  .accomodation-resume p {
+    font-size: 18px;
+  }
+  .accomodation-resume ul li {
+    font-size: 12px;
+  }
+  .accomodation-specificities {
+    display: flex;
+    flex-direction: column;
+  }
+}
+@media (max-width: 700px) {
+  .accomodation-infos {
+    flex-direction: column;
+    margin: 5px 20px 25px 20px;
+  }
+  .accomodation-resume h1 {
+    font-size: 18px;
+  }
+  .accomodation-resume p {
+    font-size: 14px;
+  }
+  .accomodation-resume ul li {
+    font-size: 10px;
+    min-width: 85px;
+    border-radius: 10px;
+    height: 20px;
+    line-height: 20px;
+  }
+  .accomodation-host {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+  }
+  .accomodation-specificities {
+    display: flex;
+    flex-direction: column;
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+  .dropdown ul {
+    font-size: 13px;
+  }
+  .dropdown-accomodation {
+    margin-left: 0;
+    margin-right: 0;
+    border-radius: 5px;
+  }
+  .dropdown-accomodation h2 {
+    font-size: 13px;
+    line-height: 20px;
+    height: 20px;
+  }
+  .dropdown-accomodation img {
+    width: 16px;
+  }
+  .custom-dropdown-header {
+    height: 30px;
+  }
 }
 
 /*# sourceMappingURL=index.css.map */

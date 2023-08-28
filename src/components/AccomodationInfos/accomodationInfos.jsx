@@ -3,18 +3,24 @@ import dbJson from '../../data/db.json';
 import Collapse from '../Collapse/Collapse';
 import Arrow from '../../Resources/arrow.png';
 
-
+import {Navigate} from 'react-router-dom';
 
 function AccomodationInfos() {
     let { accomodationId } = useParams();
     const selectedAccomodation = dbJson.find(item => item.id === accomodationId);
+    
+
+    if (!selectedAccomodation) {
+        // Rediriger vers une autre route
+        return <Navigate to="/error"/>
+    }
 
     const accomodationTitle = selectedAccomodation.title;
     const accomodationLocation = selectedAccomodation.location;
     const accomodationTags = selectedAccomodation.tags;
     const accomodationHost = selectedAccomodation.host;
 
-    const hostName = accomodationHost.name;
+    const hostName = accomodationHost.name
     const hostPicture = accomodationHost.picture;
 
     const accomodationRating = selectedAccomodation.rating;
@@ -38,6 +44,7 @@ function AccomodationInfos() {
         return stars;
       }
 
+      
     return (
         <div>
             <div className='accomodation-infos'>

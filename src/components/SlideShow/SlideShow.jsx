@@ -9,8 +9,12 @@ import { useState } from 'react';
 function SlideShow () {
     let { accomodationId } = useParams();
     const selectedAccomodation = dbJson.find(item => item.id === accomodationId);
- 
     const [currentImageIndex, setCurrentImageIndex] = useState(0);
+
+    if(!selectedAccomodation)
+    {
+        return null;
+    }
 
     const imageElements = selectedAccomodation.pictures.map((picture, id) => (
         <img key={id} src={picture} alt="images" className="carrousel-image"/>
