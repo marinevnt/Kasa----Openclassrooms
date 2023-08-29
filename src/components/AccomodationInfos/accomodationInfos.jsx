@@ -2,7 +2,6 @@ import {useParams} from 'react-router-dom';
 import dbJson from '../../data/db.json';
 import Collapse from '../Collapse/Collapse';
 import Arrow from '../../Resources/arrow.png';
-
 import {Navigate} from 'react-router-dom';
 
 function AccomodationInfos() {

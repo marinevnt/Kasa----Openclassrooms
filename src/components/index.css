@@ -281,7 +281,6 @@ body {
   margin: 0px;
   font-family: "Montserrat", sans-serif;
   color: #FF6060;
-  animation: appeadText 1s ease-in-out forwards;
 }
 .dropdown-content h2 {
   font-size: 24px;
@@ -301,7 +300,11 @@ body {
   transform: rotate(-180deg);
 }
 
-@keyframes appeadText {
+.dropdown-open-animation {
+  animation: appearText 1s ease-in-out forwards;
+}
+
+@keyframes appearText {
   0% {
     opacity: 0;
     transform: translateY(-10px);
@@ -568,9 +571,6 @@ body {
   }
   .dropdown-accomodation img {
     width: 16px;
-  }
-  .custom-dropdown-header {
-    height: 30px;
   }
 }
 

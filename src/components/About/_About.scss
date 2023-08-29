@@ -31,7 +31,6 @@
         margin: 0px;
         font-family: 'Montserrat', sans-serif;
         color : $second-text-color;
-        animation: appeadText 1s ease-in-out forwards;
         & h2 {
             font-size: 24px;
         }
@@ -49,8 +48,11 @@
 .arrow.rotate {
     transform: rotate(-180deg);
 }
+.dropdown-open-animation {
+    animation: appearText 1s ease-in-out forwards;
+}
 
-@keyframes appeadText {
+@keyframes appearText {
     0% {
         opacity: 0;
         transform: translateY(-10px);
