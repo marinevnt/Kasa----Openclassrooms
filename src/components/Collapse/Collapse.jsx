@@ -55,7 +55,7 @@ function Collapse(props) {
     return (
       <div className={`dropdown ${props.className}`} style={{ height: drodpownSize }}>
         <div ref={refHeader} className="dropdown-header">
-          <h2>{props.text}</h2>
+          <h2 onClick={dropContent}>{props.text}</h2>
           <img onClick={dropContent} src={props.img} className={`arrow ${isRotated ? 'rotate' : ''}`} alt="arrow" />
         </div>
         <ul ref={refContent} className={`dropdown-content ${isDropdownOpen ? 'dropdown-open-animation' : ''}`}>

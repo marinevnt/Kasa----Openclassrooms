@@ -29,8 +29,10 @@ body {
   cursor: pointer;
 }
 .header > ul li a:hover {
-  text-decoration: underline;
   cursor: pointer;
+}
+.header > ul .active-link {
+  text-decoration: underline;
 }
 
 .logo--header {
@@ -268,6 +270,7 @@ body {
   background-color: #FF6060;
   border-radius: 5px;
   padding: 10px 20px 10px 15px;
+  cursor: pointer;
 }
 .dropdown-header img {
   position: absolute;
@@ -355,7 +358,7 @@ body {
 
 .carrousel-image {
   height: 415px;
-  width: 1150px;
+  width: 100%;
   margin: 0;
   object-fit: cover;
   border-radius: 25px;
@@ -494,6 +497,7 @@ body {
 .dropdown-accomodation h2 {
   font-size: 18px;
   line-height: 30px;
+  cursor: pointer;
 }
 
 .star-rating {

@@ -1,45 +1,45 @@
 .carrousel {
-    height : 415px;
-    position: relative; 
-    display: flex;
-    justify-content: center;
-    margin-bottom: 30px;
-    margin-left: 100px;
-    margin-right: 100px;
-        &-content {
-            height : 415px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            width: 100%;
-        }
+  height : 415px;
+  position: relative; 
+  display: flex;
+  justify-content: center;
+  margin-bottom: 30px;
+  margin-left: 100px;
+  margin-right: 100px;
+      &-content {
+          height : 415px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          width: 100%;
+      }
 }
 .carrousel-image {
-        height : 415px;
-        width: 1150px;
-        margin:0;
-        object-fit: cover;
-        border-radius: 25px;
-        position: relative;
-        overflow: hidden;
-    }
+      height : 415px;
+      width: 100%;
+      margin:0;
+      object-fit: cover;
+      border-radius: 25px;
+      position: relative;
+      overflow: hidden;
+  }
 
 .arrow-left {
-    top: 160px;
-    left: 30px;
-    position: absolute;
+  top: 160px;
+  left: 30px;
+  position: absolute;
 }
 .arrow-right {
-    top: 160px;
-    right: 30px;
-    position: absolute;
+  top: 160px;
+  right: 30px;
+  position: absolute;
 }
 .image-index {
-    position: absolute;
-    bottom: 25px;
-    color: $main-text-color;
-    font-family: 'Montserrat', sans-serif;
-    font-size: 18px;
+  position: absolute;
+  bottom: 25px;
+  color: $main-text-color;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 18px;
 }
 
 @media (max-width: 900px) {

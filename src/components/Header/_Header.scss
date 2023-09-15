@@ -17,11 +17,14 @@
                 cursor: pointer;
             }
             & a:hover {
-                text-decoration: underline;
                 cursor: pointer;
             }
         }
+    .active-link {
+        text-decoration: underline;
+    }
 }
+
 .logo--header {
     width: 200px;
     height: 70px;
